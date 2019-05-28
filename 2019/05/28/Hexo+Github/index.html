@@ -1,277 +1,243 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
-
-<!-- Head tag -->
-<head><meta name="generator" content="Hexo 3.8.0">
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--Description-->
-
-    
-
-    
-        <meta name="description" content="如何搭建Hexo+Github
-title: 手把手教你如何搭建hexo+githubdate: 2019-05-28 00:02:46tags:  技术 博客自己搭建这个博客的时候也是学习了很长时间的，为了让技术不流失（其实是怕自己忘了٩(๑❛ᴗ❛๑)۶）然后写下了这篇文章，整理笔记、知识，并将中">
-    
-
-    <!--Author-->
-    
-        <meta name="author" content="John Doe">
-    
-
-    <!--Open Graph Title-->
-    
-        <meta property="og:title" content="Hexo">
-    
-
-    <!--Open Graph Description-->
-    
-        <meta property="og:description" content="如何搭建Hexo+Github
-title: 手把手教你如何搭建hexo+githubdate: 2019-05-28 00:02:46tags:  技术 博客自己搭建这个博客的时候也是学习了很长时间的，为了让技术不流失（其实是怕自己忘了٩(๑❛ᴗ❛๑)۶）然后写下了这篇文章，整理笔记、知识，并将中">
-    
-
-    <!--Open Graph Site Name-->
-        <meta property="og:site_name" content="Hexo">
-
-    <!--Type page-->
-    
-        <meta property="og:type" content="website">
-    
-
-    <!--Page Cover-->
-    
-    
-        <meta property="og:image" content="http://yoursite.comhttp://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg">
-    
-
-        <meta name="twitter:card" content="summary_large_image">
-
-    
-
-    
-        <meta name="twitter:image" content="http://yoursite.comhttp://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg">
-    
-
-    <!-- Title -->
-    
+<html lang>
+<head prefix="og: http://ogp.me/ns#"><meta name="generator" content="Hexo 3.8.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content>
     <title>Hexo</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Open Graph -->
+    <meta name="description" content="&amp;#x5982;&amp;#x4F55;&amp;#x642D;&amp;#x5EFA;Hexo+Github title: &amp;#x624B;&amp;#x628A;&amp;#x624B;&amp;#x6559;&amp;#x4F60;&amp;#x5982;&amp;#x4F55;&amp;#x642D;&amp;#x5EFA;hexo+githubdate: 2019-05-28 00:02:46tags:  &amp;#x6280;&amp;#x672F; &amp;#x535A;&amp;#x5BA2;&amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2019/05/28/Hexo+Github/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="&amp;#x5982;&amp;#x4F55;&amp;#x642D;&amp;#x5EFA;Hexo+Github title: &amp;#x624B;&amp;#x628A;&amp;#x624B;&amp;#x6559;&amp;#x4F60;&amp;#x5982;&amp;#x4F55;&amp;#x642D;&amp;#x5EFA;hexo+githubdate: 2019-05-28 00:02:46tags:  &amp;#x6280;&amp;#x672F; &amp;#x535A;&amp;#x5BA2;&amp;">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://i.loli.net/2019/05/28/5cece79b1aaed65745.jpg">
+<meta property="og:updated_time" content="2019-05-28T07:57:50.390Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="&amp;#x5982;&amp;#x4F55;&amp;#x642D;&amp;#x5EFA;Hexo+Github title: &amp;#x624B;&amp;#x628A;&amp;#x624B;&amp;#x6559;&amp;#x4F60;&amp;#x5982;&amp;#x4F55;&amp;#x642D;&amp;#x5EFA;hexo+githubdate: 2019-05-28 00:02:46tags:  &amp;#x6280;&amp;#x672F; &amp;#x535A;&amp;#x5BA2;&amp;">
+<meta name="twitter:image" content="https://i.loli.net/2019/05/28/5cece79b1aaed65745.jpg">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/style.css">
+    <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "email": "mailto:",
+  "image": "",
+  "name": "John Doe",
+  "url": "http://yoursite.com"
+}
+</script>
+    <script>
+    var algoliaEnabled = false;
+    
+</script>
 
-    <!-- Custom Fonts -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Gallery -->
-    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet">
-
-    <!-- Google Analytics -->
     
 
-
-    <!-- favicon -->
+    
+    
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    
+    
+    
+        <!-- stylesheets list from config.yml -->
+        
+        <link rel="stylesheet" href="/css/aloha.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/magnific-popup.js/1.1.0/magnific-popup.min.css">
+        
     
 
 </head>
+<body id="body" style="margin-bottom: 0;" class="pushable">
 
-
-<body>
-
-    <!-- Menu -->
-    <!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">Configurable Title</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                
-                    <li>
-                        <a href="/">
-                            
-                                Home
-                            
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="/archives">
-                            
-                                Archives
-                            
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="/tags">
-                            
-                                Tags
-                            
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="/categories">
-                            
-                                Categories
-                            
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="https://github.com/klugjo/hexo-theme-clean-blog">
-                            
-                                <i class="fa fa-github fa-stack-2x"></i>
-                            
-                        </a>
-                    </li>
-                
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
+    <div class="ui top fixed menu">
+        <a class="item" id="menu-icon"><i class="sidebar icon"></i></a>
     </div>
-    <!-- /.container -->
-</nav>
 
-    <!-- Main Content -->
-    <!-- Page Header -->
-<!-- Set your background image for this header in your post front-matter: cover -->
+    <div id="menu-sidebar" class="ui left vertical sidebar menu">
 
-<header class="intro-header" style="background-image: url('http://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <h1>Untitled</h1>
+    <div id="sidebar-top">
+        <div class="content">
+            <h3>Hexo</h3>
+        </div>
+    </div>
+    <div class="ui container sidebar-card">
+    <div class="ui people shape content">
+        <div class="active side">
+            <div class="ui card">
+                <div class="image">
+                    <img class="ui medium bordered image" src="/images/avatar.jpg">
+                </div>
+                <div class="content">
+                    <a class="header">John Doe</a>
                     
-                    <span class="meta">
-                        <!-- Date and Author -->
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
                         
                         
-                            2019-05-28
+                    </div>
+
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
                         
-                    </span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</header>
 
-<!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
 
-            <!-- Tags and categories -->
-           
+</div>
 
-            <!-- Gallery -->
-            
+    
+    
 
-            <!-- Post Main Content -->
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <h1 id="如何搭建Hexo-Github"><a href="#如何搭建Hexo-Github" class="headerlink" title="如何搭建Hexo+Github"></a>如何搭建Hexo+Github</h1><hr>
-<p>title: 手把手教你如何搭建hexo+github<br>date: 2019-05-28 00:02:46<br>tags:  技术 博客<br>自己搭建这个博客的时候也是学习了很长时间的，为了让技术不流失（其实是怕自己忘了٩(๑❛ᴗ❛๑)۶）<br>然后写下了这篇文章，整理笔记、知识，并将中承载的价值传给大家。<br>—–我是文刀竹肃，一个热爱生活的人。</p>
+    
+
+    
+    <a href="/index.html" class="item">
+        <i class="home icon"></i>
+        HOME
+    </a>
+
+    
+
+    
+</div>
+
+    <div class="pusher body-content">
+        <div id="content" class="ui main container">
+            <!--<div class="ui one column grid">-->
+                <!--<div class="column">-->
+                    <!--<div class="ui main container">-->
+                        <div id="post-Hexo+Github" class="ui main container article-type-post">
+
+    
+
+    <div class="ui divided grid">
+
+        <div class="two column row" id="article-content">
+
+            <div class="thirteen wide computer thirteen wide tablet sixteen wide mobile column">
+                
+
+                <div class="article-inner">
+
+                    <div class="article-entry" itemprop="articleBody">
+                        
+                        <h1 id="&#x5982;&#x4F55;&#x642D;&#x5EFA;Hexo-Github"><a href="#&#x5982;&#x4F55;&#x642D;&#x5EFA;Hexo-Github" class="headerlink" title="&#x5982;&#x4F55;&#x642D;&#x5EFA;Hexo+Github"></a>&#x5982;&#x4F55;&#x642D;&#x5EFA;Hexo+Github</h1><hr>
+<p>title: &#x624B;&#x628A;&#x624B;&#x6559;&#x4F60;&#x5982;&#x4F55;&#x642D;&#x5EFA;hexo+github<br>date: 2019-05-28 00:02:46<br>tags:  &#x6280;&#x672F; &#x535A;&#x5BA2;<br>&#x81EA;&#x5DF1;&#x642D;&#x5EFA;&#x8FD9;&#x4E2A;&#x535A;&#x5BA2;&#x7684;&#x65F6;&#x5019;&#x4E5F;&#x662F;&#x5B66;&#x4E60;&#x4E86;&#x5F88;&#x957F;&#x65F6;&#x95F4;&#x7684;&#xFF0C;&#x4E3A;&#x4E86;&#x8BA9;&#x6280;&#x672F;&#x4E0D;&#x6D41;&#x5931;&#xFF08;&#x5176;&#x5B9E;&#x662F;&#x6015;&#x81EA;&#x5DF1;&#x5FD8;&#x4E86;&#x669;(&#xE51;&#x275B;&#x1D17;&#x275B;&#xE51;)&#x6F6;&#xFF09;<br>&#x7136;&#x540E;&#x5199;&#x4E0B;&#x4E86;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#xFF0C;&#x6574;&#x7406;&#x7B14;&#x8BB0;&#x3001;&#x77E5;&#x8BC6;&#xFF0C;&#x5E76;&#x5C06;&#x4E2D;&#x627F;&#x8F7D;&#x7684;&#x4EF7;&#x503C;&#x4F20;&#x7ED9;&#x5927;&#x5BB6;&#x3002;<br>&#x2014;&#x2013;&#x6211;&#x662F;&#x6587;&#x5200;&#x7AF9;&#x8083;&#xFF0C;&#x4E00;&#x4E2A;&#x70ED;&#x7231;&#x751F;&#x6D3B;&#x7684;&#x4EBA;&#x3002;</p>
 <hr>
-<h3 id="好了让我们开始吧"><a href="#好了让我们开始吧" class="headerlink" title="好了让我们开始吧"></a>好了让我们开始吧</h3><h4 id="1、需要准备的软件"><a href="#1、需要准备的软件" class="headerlink" title="1、需要准备的软件"></a>1、需要准备的软件</h4><blockquote>
-<p>1、node.js<br>2、Git<br><img src="https://i.loli.net/2019/05/28/5cece79b1aaed65745.jpg" alt="1"></p>
+<h3 id="&#x597D;&#x4E86;&#x8BA9;&#x6211;&#x4EEC;&#x5F00;&#x59CB;&#x5427;"><a href="#&#x597D;&#x4E86;&#x8BA9;&#x6211;&#x4EEC;&#x5F00;&#x59CB;&#x5427;" class="headerlink" title="&#x597D;&#x4E86;&#x8BA9;&#x6211;&#x4EEC;&#x5F00;&#x59CB;&#x5427;"></a>&#x597D;&#x4E86;&#x8BA9;&#x6211;&#x4EEC;&#x5F00;&#x59CB;&#x5427;</h3><h4 id="1&#x3001;&#x9700;&#x8981;&#x51C6;&#x5907;&#x7684;&#x8F6F;&#x4EF6;"><a href="#1&#x3001;&#x9700;&#x8981;&#x51C6;&#x5907;&#x7684;&#x8F6F;&#x4EF6;" class="headerlink" title="1&#x3001;&#x9700;&#x8981;&#x51C6;&#x5907;&#x7684;&#x8F6F;&#x4EF6;"></a>1&#x3001;&#x9700;&#x8981;&#x51C6;&#x5907;&#x7684;&#x8F6F;&#x4EF6;</h4><blockquote>
+<p>1&#x3001;node.js<br>2&#x3001;Git<br><a class="magnific-img" href="https://i.loli.net/2019/05/28/5cece79b1aaed65745.jpg"><img src="https://i.loli.net/2019/05/28/5cece79b1aaed65745.jpg" alt="1" class="ui centered image"></a></p>
 </blockquote>
 
+                        
+                    </div>
+
+                    
+                    
+                    
+
+                    <div class="description post-description">
+    <span class="post-description-item">
+        <time datetime="2019-05-28T07:58:04.284Z" itemprop="datePublished">2019-05-28</time>
+
+    </span>
+    <span class="post-description-item">
+        
+    </span>
+</div>
+
+                </div>
+                
+                <div id="pagination" class="nav-web ui text container pagination">
+
+    <div class="ui stackable two column divided grid container">
+        <div class="row">
+            <div class="column nav-left">
+                
+
+                <a class="ui tiny button disabled"><i class="angle left icon"></i>Previous</a>
 
                 
             </div>
+            <div class="column nav-right">
+                
 
-            <!-- Comments -->
-            
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <a href="/2019/05/27/hello-world/" class="ui tiny button">
                     
-
-
-                </div>
-            
-        </div>
-    </div>
-</article>
-
-    <!-- Footer -->
-    <hr>
-
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">
+                    Hello World
                     
-
-                    
-
-                    
-                        <li>
-                            <a href="https://github.com/klugjo/hexo-theme-clean-blog" target="_blank">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                    
-
-                    
-
-                    
-
-                    
-                </ul>
-                <p class="copyright text-muted">&copy; 2019 John Doe<br></p>
-                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
-                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+                    <i class="angle right icon"></i></a>
+                
             </div>
         </div>
     </div>
-</footer>
+
+</div>
+                
+            </div>
+
+            
+            <div class="three wide computer three wide tablet column">
+
+                <div class="ui sticky article-toc" id="article-toc">
+                    <!-- toc -->
+                    <ol class="ui ordered list"><li><a href="#如何搭建Hexo-Github"><span>如何搭建Hexo+Github</span></a><ol><li><a href="#好了让我们开始吧"><span>好了让我们开始吧</span></a><ol><li><a href="#1、需要准备的软件"><span>1、需要准备的软件</span></a></li></ol></li></ol></li></ol>
+                </div>
+
+            </div>
+            
+
+        </div>
+    </div>
+</div>
 
 
-    <!-- After footer scripts -->
-    
-<!-- jQuery -->
-<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <div class="ui vertical footer segment">
+    <div class="ui center aligned container">
+        <div class="ui inverted section divider"></div>
+        &copy; 2019 <a href="/">John Doe</a>,
+        Powered by <a href="https://github.com/henryhuang/hexo-theme-aloha" target="_blank">Aloha</a> and <a href="http://hexo.io/" target="_blank">Hexo</a>.
+    </div>
+</div>
 
-<!-- Bootstrap -->
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </div>
 
-<!-- Gallery -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 
-<!-- Disqus Comments -->
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="//cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+
+<script src="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch/3.18.1/algoliasearch.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch-helper-js/2.13.0/algoliasearch.helper.min.js"></script>
+
+<script src="/js/semantic-ui-algolia.js"></script>
+
+<script src="/js/aloha-events.js"></script>
 
 
 
 </body>
-
 </html>
