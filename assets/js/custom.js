@@ -46,10 +46,7 @@
                       { src: 'assets/img/3.jpg', fade: 1000, delay: 9000 },
                       { src: 'assets/img/4.jpg', fade: 1000, delay: 9000 },
                       { src: 'assets/img/5.jpg', fade: 1000, delay: 9000 },
-                      { src: 'assets/img/6.jpg', fade: 1000, delay: 9000 },
-                      { src: 'assets/img/7.jpg', fade: 1000, delay: 9000 },
-                      { src: 'assets/img/8.jpg', fade: 1000, delay: 9000 },
-                      { src: 'assets/img/9.jpg', fade: 1000, delay: 9000 },
+
                      
                     ]
                 })('overlay', {
