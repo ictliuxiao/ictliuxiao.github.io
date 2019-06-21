@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表单域选择器</title>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script>
+			$(document).ready(function(){
+				$(":input").css("border","3px solid blue");
+				$(":text").css("background","turquoise");
+				$(":password").css("background","bisque");
+				
+				$('radio:first').attr('checked','ture');
+				$(":checked").attr('checked','ture');
+				$(':image').attr("src","img/20151125212058_hJfQR.png");
+			});
+		</script>
+		<style>
+			li{
+				list-style-type: none;
+				line-height: 2em;//使各个行有间隙
+			}
+		</style>
+	</head>
+	<body>
+		
+		<h1>表单域选择器</h1>
+			<form>
+				<ul>
+					<li>姓名:<input type="text"></li>
+					<li>密码:<input type="password"></li>
+				
+				
+				<li>性别:<input type="radio" name="habbit">男<input type="radio" name="habbit">女</li>
+				
+				
+				
+				<li>兴趣爱好:<input type="checkbox" name="hate">音乐
+							<input type="checkbox" name="hate">体育
+							<input type="checkbox" name="hate">旅游
+							<input type="checkbox" name="hate">美食
+				</li>
+				
+				<li>我的照片:
+					<input class="img" type="image"  style="vertical-align:top" width="500px" height="500px">
+				</li>
+				
+					<input type="submit">
+					<input type="reset">
+				</ul>
+			
+		</form>
+	</body>
+</html>

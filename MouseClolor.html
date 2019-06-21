@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>鼠标移动颜色改变</title>
+		<style>
+			button{
+				width: 80px;
+				height: 50px;
+				background: #ccc;
+				margin-right: 15px;
+			}
+		</style>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script>
+			$(document).ready(function(){
+				$("button").bind({
+					mouseover:function(){
+						$(this).css("background","red")
+					},mouseout:function(){
+						$(this).css("background","#CCCCCC");
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<button>选项一</button>
+		<button>选项二</button>
+		<button>选项三</button>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>实训十二</title>
+		<link rel="stylesheet" href="jquery-ui.min.css">
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/jquery-ui.js" ></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js" ></script>
+		<style>
+			a {
+				text-decoration: none;
+			}
+			.ui-menu {
+				width: 150px;
+				line-height: 2em;
+			}
+		</style>
+		<script>
+			$(function(){
+				$("#menu").menu();
+			});
+		</script>
+	</head>
+	<body>
+		<ul>
+			<li><a href="#">一级菜单-1</a></li>
+			<li><a href="#">一级菜单-2</a></li>
+			<li><a href="#">一级菜单-3</a></li>
+			<li><a href="#">一级菜单-4</a>
+				<ul>
+					<li class="ui-state-disabled"><a href="#">二级菜单-1</a></li>
+					<li><a href="#">二级菜单-2</a></li>
+					<li><a href="#">二级菜单-3</a></li>
+				</ul>
+			</li>
+			<li><a href="#">一级菜单-5</a></li>
+			<li><a href="#">一级菜单-6</a>
+				<ul>
+					<li class="ui-state-disabled"><a href="#">二级菜单-1</a>
+						<ul>
+							<li><a href="#">三级菜单-1</a></li>
+							<li><a href="#">三级菜单-2</a></li>
+							<li><a href="#">三级菜单-3</a></li>
+						</ul>
+					</li>
+					<li><a href="#">二级菜单-2</a>
+						<ul>
+						<li><a href="#">三级菜单-1</a></li>
+						<li><a href="#">三级菜单-2</a></li>
+						<li><a href="#">三级菜单-3</a></li>
+						</ul>
+					</li>
+					<li><a href="#">二级菜单-3</a>
+						<ul>
+						<li><a href="#">三级菜单-1</a></li>
+						<li><a href="#">三级菜单-2</a></li>
+						<li><a href="#">三级菜单-3</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</body>
+</html>

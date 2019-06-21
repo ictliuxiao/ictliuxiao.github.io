@@ -1,120 +1,39 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-<meta name="description" content="" />
-<meta name="author" content="" />
-
-<!--网页标题-->
- <title>Liu Xiao Online Documents</title>
-
-<!--背景音乐-->
-<audio src="assets/img/BJmusic.mp3" id="aud" autoplay="autoplay" controls="controls" preload="auto"></audio>
-
-<!--本地引入CSS-->
-<link href="assets/css/bootstrap.css" rel="stylesheet" />
-<link href="assets/plugins/vegas/jquery.vegas.min.css" rel="stylesheet" />
-<link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-<link href="assets/css/style.css" rel="stylesheet" />
-
-
-
-</head>
-<body data-spy="scroll" data-target="#menu">
-<div class="navbar navbar-inverse navbar-fixed-top scrollclass" id="menu" >
-	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="" style="max-height:40px" /></a>
-		</div>
-		<div class="navbar-collapse collapse">
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#home">HOME</a></li>
-				 <li><a href="#about">ABOUT</a></li>
-				<li><a href="#services">SERVICES</a></li>
-				<li><a href="#contact">CONTACT</a></li>
+	<head>
+		<meta charset="utf-8" />
+		<title>主页网点</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script>
+			$(document).ready(function(){
+				alert("姓名:刘箫、学号:20170301108、班级:17级计管一班");
+			});
+		</script>
+	</head>
+	<body>
+		<img src="img/-798b0a2d8954e70f.jpg" width="440px" height="440px" style="position: absolute;left: 300px;">
+			<h1>作业列表</h1>
+			<ul>
+				<li><a href="Hello_JQuery.html">Hello_JQuery</a></li>
+				<li><a href="IDXZQ.html">ID选择器</a></li>
+				<li><a href="LeiXZQ.html">类选择器</a></li>
+				<li><a href="CengciXZQ.html">层次选择器</a></li>
+				<li><a href="BiaodanXZQ.html">表单选择器</a></li>
+				<li><a href="BiaoqianXZQ.html">标签选择器</a> </li>
+				<li><a href="TongyongXZQ.html">通用选择器</a> </li>
+				<li><a href="JiandanguolvXZQ.html">简单过滤选择器</a> </li>
+				<li><a href="PhoneGLQ.html">手机号码过滤器</a></li>
+				<li><a href="e-mailGLQ.html">邮箱选择过滤器</a></li>
+				<li><a href="YuanGongXinXi.html">员工信息</a></li>
+				<li><a href="Photo.html">图片切换</a></li>
+				<li><a href="BiaoTiLan.html">标题栏</a></li>
+				<li><a href="Event.html">Even事件</a></li>
+				<li><a href="MaoPao.html">阻止冒泡</a></li>
+				<li><a href="TableON.html">阻止表单提交功能</a></li>
+				<li><a href="Click.html" >触发事件</a></li>
+				<li><a href="ONE.html">一次性事件</a></li>
 			</ul>
-		</div>
-	   
-	</div>
-</div>
-
-<div id="home" >
-   <div class="container">
-	   <div class="row">
-		   <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 ">
-			   <div id="carousel-slider" data-ride="carousel" class="carousel slide">
-
-					<div class="carousel-inner">
-						<div class="item active">
-
-							<h1>Welcome To Liu Xiao Online Documents</h1>
-						</div>
-						<div class="item">
-						 <h1 > This is made by hand only</h1>
-						</div>
-						<div class="item">
-						  <h1>  AWESOMENESS  JUST FOR YOU</h1>
-						</div>
-					</div>
-					<!--INDICATORS-->
-					<ol class="carousel-indicators">
-						<li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
-						<li data-target="#carousel-slider" data-slide-to="1" class=""></li>
-						<li data-target="#carousel-slider" data-slide-to="2" class=""></li>
-					</ol>
-
-				</div>
-			
-			  
-		   </div>
-	   </div>
-		<div class="row">
-		   <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2  scrollclass">
-			  
-
-			   <p >
-				  In the most ordinary life, humility and hard work. Someday, you will stand in the brightest place and live like you ever wanted to be. --Liu Xiao
-				 
-			   </p>
-			   <br/>
-			   <a href="#about" class="btn  btn-lg custom-btn-1"><i class="fa fa-home" ></i>ABOUT </a>  
-			   <a href="#services" class="btn  btn-lg custom-btn-1" ><i class="fa fa-comments-o" ></i> SERVICES </a>
-				<a href="#contact" class="btn btn-lg custom-btn-1"><i class="fa fa-globe" ></i> CONTACT </a>
-		   </div>
-	   </div>
-   </div>
-   
-</div>
-
-
-
- 
-		 
-		</div>
-	</div>
-</section>
-
-
-<!--底部标识-->
-<div style="text-align: center;">Copyright &copy; 2019.Liu Xiao Personal Copyright All Rights Reserved. --Modified version V1.0 </div>
-<!--
-	V1.0 2019年6月18日
-	V2.0 
--->
-
-
-<!--引入scripts-->
-<script src="assets/plugins/jquery-1.10.2.js"></script>
-<script src="assets/plugins/bootstrap.js"></script>
-<script src="assets/plugins/vegas/jquery.vegas.min.js"></script>
-<script src="assets/plugins/jquery.easing.min.js"></script>
-<script src="assets/js/custom.js"></script>
-
-</body>
+	
+	</body>
 </html>

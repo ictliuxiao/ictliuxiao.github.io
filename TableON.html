@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>阻止表单提交功能</title>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script>
+			$(document).ready(function(){
+				$("#subbtn").click(function(e){
+					var username=$('#username').val();
+					if(username==""){
+						alert("请填写用户名");
+						$('#username').focus();
+						e.preventDefault();
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<form action="Hello_JQuery.html">
+			用户名:<input type="text"  id="username"><br>
+			<input type="submit" value="注册" id="subbtn" >
+			</form>
+	</body>
+</html>

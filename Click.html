@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>触发事件</title>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script>
+			$(document).ready(function(e){	
+				$("button").click(function(){
+					alert("欢迎来到JQuery的世界!");
+				});
+				$("button").trigger("click");
+			});
+		</script>
+	</head>
+	<body>
+		<button>普通按钮</button>
+	</body>
+</html>

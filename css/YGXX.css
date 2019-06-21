@@ -1,0 +1,31 @@
+div{
+	width: 70%;
+	padding: 10px;
+	margin: 10px auto;
+	border: 5px solid #CCC;
+}
+h2{
+	text-align: center;
+}
+table{
+	width: 100%;
+	border: 2px solid #999;
+	text-align: center;
+	border-collapse: collapse;
+}
+table td,table th{
+	border: 2px solid #999;
+	height: 25px;
+}
+.first{
+	background: #CCCCCC;
+}
+.even{
+	background:lightyellow;
+}
+.odd{
+	background:aliceblue;
+}
+.sel{
+	background: yellow;
+}

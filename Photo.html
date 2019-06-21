@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>图片切换</title>
+		<link rel="stylesheet"href="css/Photo.css">
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script>
+			$(document).ready(function(){
+				$("#main ul li").hover(function(){
+					$("#main ul li").removeClass("active");
+					$(this).addClass("active");
+					$("#big img").attr("src",$(this).children('img').attr('src'));
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="box">
+			<div id="main">
+				<div id="big"><img src="img/timg (1).jpg"></div>
+				<ul>
+					<li class="active"><img src="img/timg (1).jpg"></li>
+					<li><img src="img/timg (2).jpg"></li>
+					<li><img src="img/timg (3).jpg"></li>
+					<li><img src="img/timg (4).jpg"></li>
+				</ul>
+			</div>
+		</div>
+		
+	</body>
+</html>

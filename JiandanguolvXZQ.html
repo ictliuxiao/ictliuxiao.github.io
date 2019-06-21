@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>简单过滤选择器</title>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script>
+			$(document).ready(function(){
+				$("tr:even").css("background","#e8f3d1");
+				$("tr:odd").css("background","f9fcef");
+				$("tr:first").css("background","forestgreen");
+				//$("tr:first").css("background":"green","color":"#fff");
+			});
+		</script>
+		<style>
+			td{
+				font-size: 20px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<table width="420px" border="1px" cellpadding="0px" cellspacing="0px" bordercolor="#ff9900">
+			<tr>
+				<td width="50px">编号</td>
+				<td width="80px">姓名</td>
+				<td width="50px">性别</td>
+				<td width="80px">年龄</td>
+				<td width="80px">所在城市</td>
+			</tr>
+			<tr>
+				<td width="50px">1</td>
+				<td width="80px">小花</td>
+				<td width="50px">女</td>
+				<td width="80px">20</td>
+				<td width="160px">武汉</td>
+			</tr>
+			<tr>
+				<td width="50px">2</td>
+				<td width="80px">小明</td>
+				<td width="50px">男</td>
+				<td width="80px">20</td>
+				<td width="160px">长沙</td>
+			</tr>
+			<tr>
+				<td width="50px">3</td>
+				<td width="80px">小红</td>
+				<td width="50px">女</td>
+				<td>19</td>
+				<td>上海</td>
+			</tr>
+			<tr>
+				<td width="50px">4</td>
+				<td width="80px">小刚</td>
+				<td width="50px">男</td>
+				<td width="80px">21</td>
+				<td width="160px">北京</td>
+			</tr>
+			<tr>
+				<td width="50px">5</td>
+				<td width="80px">小林</td>
+				<td width="50px">男</td>
+				<td width="80px">20</td>
+				<td width="160px">北京</td>
+			</tr>
+		</table>
+		
+	</body>
+</html>
