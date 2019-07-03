@@ -1,39 +1,198 @@
 <!DOCTYPE html>
-<html>
+<html><!---->
 	<head>
+		<!--网站编码-->
 		<meta charset="utf-8" />
-		<title>主页网点</title>
-		<link rel="stylesheet" href="css/index.css" />
-		<script type="text/javascript" src="js/jquery.min.js" ></script>
-		<script>
-			$(document).ready(function(){
-				alert("姓名:刘箫、学号:20170301108、班级:17级计管一班");
-			});
-		</script>
+		
+		<!--网页标题-->
+		<title>ICTLiuXiao.cn</title>
+		
+		<!--背景音乐-->
+		<audio src="img/BJmusic.mp3"  autoplay="autoplay"></audio>
+
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+	
+		<!--内联样式表-->
+		<style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+				/*background: url(img/5.jpg);*/
+				/*background-color: #C0C0C0;*/
+				background: url(img/6.jpg);
+				position:fixed;
+  				top: 0;
+  				left: 0;
+ 				width:100%;
+  				height:100%;
+  				min-width: 1000px;
+  				z-index:-10;
+  				zoom: 1;
+  				background-color: #fff;
+  				background-repeat: no-repeat;
+  				background-size: cover;
+  				-webkit-background-size: cover;
+  				-o-background-size: cover;
+  				background-position: center 0;
+	 		}
+	 		#ding{
+	 			width: auto;
+	 			height: 48px;
+	 			/*border: 2px solid #CCC;*/
+	 			background-color: black ;
+	 		}
+			
+			#one{
+				margin-left: 300px;
+				text-decoration: none;
+				font-family: "微软雅黑";
+				color: white;
+				font-weight: bold;
+				font-size: 18px;
+				line-height:50px; text-align:center;
+			}
+			
+			#two{
+				margin-left: 720px;
+				text-decoration: none;
+				font-family: "微软雅黑";
+				color: white;
+				font-weight: bold;
+				font-size: 18px;
+			}
+			
+			#tree{
+				margin-left: 20px;
+				text-decoration: none;
+				font-family: "微软雅黑";
+				color: white;
+				font-weight: bold;
+				font-size: 18px;
+			}
+			#four{
+				margin-left: 20px;
+				text-decoration: none;
+				font-family: "微软雅黑";
+				color: white;
+				font-weight: bold;
+				font-size: 18px;
+			}
+			#huanying{
+					width: 700px;
+					height: 150px;
+					margin-left: auto;
+					margin-right: auto;
+					margin-top: 45px;
+			}
+			#huanying p{
+				font-family: "微软雅黑";
+				font-size: 60px;
+				font-weight: bold;
+				text-align: center;
+			}
+			
+			#jianjie{
+					width: 700px;
+					height: 250px;
+					margin-left: auto;
+					margin-right: auto;
+					margin-top: 0px;
+			}
+			#jianjie p{
+				font-family: "微软雅黑";
+				text-align: center;
+			}
+			#lianxi{
+					width: 700px;
+					height: 35px;
+					margin-left: auto;
+					margin-right: auto;
+					margin-top: 40px;
+			}
+			#lianxi p{
+					font-family: "微软雅黑";
+					text-align: center;
+			}
+			#aniu{
+					width: 700px;
+					height: 30px;
+					/*border: 2px solid red;*/
+					margin-left: auto;
+					margin-right: auto;
+					margin-top: 70px;
+			}
+			#aniu #aniu1{
+				width: 150px; /* 宽度 */
+				height: 40px; /* 高度 */
+				border-width: 0px; /* 边框宽度 */
+				border-radius: 3px; /* 边框半径 */
+				background: #1E90FF; /* 背景颜色 */
+				cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+				outline: none; /* 不显示轮廓线 */
+				font-family: Microsoft YaHei; /* 设置字体 */
+				color: white; /* 字体颜色 */
+				font-size: 17px; /* 字体大小 */
+				margin-left: 10px;
+			}
+			#aniu #aniu2{
+				width: 150px; /* 宽度 */
+				height: 40px; /* 高度 */
+				border-width: 0px; /* 边框宽度 */
+				border-radius: 3px; /* 边框半径 */
+				background: #1E90FF; /* 背景颜色 */
+				cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+				outline: none; /* 不显示轮廓线 */
+				font-family: Microsoft YaHei; /* 设置字体 */
+				color: white; /* 字体颜色 */
+				font-size: 17px; /* 字体大小 */
+				margin-left: 120px;
+			}
+			#aniu #aniu3{
+				width: 150px; /* 宽度 */
+				height: 40px; /* 高度 */
+				border-width: 0px; /* 边框宽度 */
+				border-radius: 3px; /* 边框半径 */
+				background: #1E90FF; /* 背景颜色 */
+				cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+				outline: none; /* 不显示轮廓线 */
+				font-family: Microsoft YaHei; /* 设置字体 */
+				color: white; /* 字体颜色 */
+				font-size: 17px; /* 字体大小 */
+				margin-left: 120px;
+			}
+			
+			
+		</style>
 	</head>
 	<body>
-		<img src="img/-798b0a2d8954e70f.jpg" width="440px" height="440px" style="position: absolute;left: 300px;">
-			<h1>作业列表</h1>
-			<ul>
-				<li><a href="Hello_JQuery.html">Hello_JQuery</a></li>
-				<li><a href="IDXZQ.html">ID选择器</a></li>
-				<li><a href="LeiXZQ.html">类选择器</a></li>
-				<li><a href="CengciXZQ.html">层次选择器</a></li>
-				<li><a href="BiaodanXZQ.html">表单选择器</a></li>
-				<li><a href="BiaoqianXZQ.html">标签选择器</a> </li>
-				<li><a href="TongyongXZQ.html">通用选择器</a> </li>
-				<li><a href="JiandanguolvXZQ.html">简单过滤选择器</a> </li>
-				<li><a href="PhoneGLQ.html">手机号码过滤器</a></li>
-				<li><a href="e-mailGLQ.html">邮箱选择过滤器</a></li>
-				<li><a href="YuanGongXinXi.html">员工信息</a></li>
-				<li><a href="Photo.html">图片切换</a></li>
-				<li><a href="BiaoTiLan.html">标题栏</a></li>
-				<li><a href="Event.html">Even事件</a></li>
-				<li><a href="MaoPao.html">阻止冒泡</a></li>
-				<li><a href="TableON.html">阻止表单提交功能</a></li>
-				<li><a href="Click.html" >触发事件</a></li>
-				<li><a href="ONE.html">一次性事件</a></li>
-			</ul>
-	
+		<!--顶部标题栏-->
+		<div id="ding">
+			<a id="one" href="#">ICTLiuXiao.cn</a>	
+			<a id="two" href="#">主页</a> 
+			<a id="tree" href="https://ictliuxiao.github.io/gitbook">在线文档</a>
+			<a id="four" href="#">关于</a>
+		</div>
+		<!--欢迎部分-->
+		<div id="huanying">
+			<p>Welcome To LiuXiao<br /> Online Documents</p>
+		</div>
+		<!--简介部分-->
+		<div id="jianjie">
+			<p>In the most ordinary life, humility and hard work. Someday, you will stand in the brightest place and live like you ever wanted to be. --Liu Xiao</p>
+		</div>
+		<!--按钮部分-->
+		<div id="aniu">
+			<button id="aniu1" type="button">主页</button><button id="aniu2" type="button">在线文档</button><button id="aniu3" type="button">关于</button>
+		</div>
+		
+		<!--联系地址-->
+		<div id="lianxi">
+			<p>QQ:1561697165&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail:HUAWEIliuxiao@qq.com</p>
+		</div>
+		
+		<!--底部标识栏-->
+		<div style="text-align: center; margin-top: 0px; ">Copyright &copy; 2019.Liu Xiao Personal Copyright All Rights Reserved. --Modified version V1.0 </div>
+		
+		
 	</body>
 </html>
