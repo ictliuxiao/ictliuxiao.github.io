@@ -1,0 +1,398 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    
+  KaliLinux系统 - 刘箫－在线文档库
+  
+  </title>
+ <meta name="description" content="">
+ <link href="atom.xml" rel="alternate" title="刘箫－在线文档库" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/foundation.min.css" />
+    <link rel="stylesheet" href="asset/css/docs.css" />
+
+    <script src="asset/js/vendor/modernizr.js"></script>
+    <script src="asset/js/vendor/jquery.js"></script>
+    <script src="asset/highlightjs/highlight.pack.js"></script>
+    <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+  </head>
+  <body class="antialiased hide-extras">
+    
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
+
+<div id="header">
+    <h1><a href="index.html">刘箫－在线文档库</a></h1>
+</div>
+
+</nav>
+        <nav class="tab-bar show-for-small">
+  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
+    <span> &nbsp; 刘箫－在线文档库</span>
+  </a>
+</nav>
+
+<aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+      <li><a href="index.html">Home</a></li>
+      
+        <li class="divider"></li>
+        <li><label>KaliLinux系统</label></li>
+
+          
+            <li><a title="Kali Linux VMware安装教程" href="15777277257654.html">Kali Linux VMware安装教程</a></li>
+          
+
+      
+      </ul>
+    </aside>
+
+<a class="exit-off-canvas" href="#"></a>
+
+        <section id="main-content" role="main" class="scroll-container">
+
+          <div class="row">
+            <div class="large-3 medium-3 columns">
+              <div class="hide-for-small">
+                <div class="sidebar">
+                <nav>
+                  <ul id="side-nav" class="side-nav">
+
+                    
+                      <li class="side-title"><span>KaliLinux系统</span></li>
+                        
+                          <li><a title="Kali Linux VMware安装教程" href="15777277257654.html">Kali Linux VMware安装教程</a></li>
+                        
+
+                    
+                  </ul>
+                </nav>
+                </div>
+              </div>
+            </div>
+            <div class="large-9 medium-9 columns">
+
+ 
+
+
+	
+		<div class="markdown-body">
+		<h1>Kali Linux VMware安装教程</h1>
+
+		<blockquote>
+<p>前言：Kali Linux系统作为白帽、黑帽最受欢迎的渗透测试系统，你如果是一个安全渗透专家或者网络安全管理员，必须要学会慎重并且合理地利用这个系统，因为对目标系统造成的实质伤害会带来法律的约束以及制裁!</p>
+</blockquote>
+
+<h4 id="toc_0">先上一个安装好了的截图，这里我安装的是Kali 5.3.0/x64位的系统。</h4>
+
+<p><img src="media/15777277257654/kali-01.png" alt="kali-01"/></p>
+
+<h4 id="toc_1">那么下面的话我会以5.3.0版本的安装过程进行介绍，分别是命令行/图形化的安装方法。</h4>
+
+<ul>
+<li>1、虚拟机的配置<br/></li>
+<li>2、命令行安装<br/></li>
+<li>3、图形化安装<br/></li>
+</ul>
+
+<h2 id="toc_2">一、虚拟机配置（本人使用的是VMware Workstation Pro 15.5.1版本）</h2>
+
+<h3 id="toc_3">1、新建虚拟机。</h3>
+
+<p><img src="/KaliLinux/img/kali-xnj-01.png" alt="Alt text"/>    </p>
+
+<h3 id="toc_4">2、稍后再选择ISO镜像文件。</h3>
+
+<p><img src="/KaliLinux/img/kali-xnj-02.png" alt="Alt text"/>    </p>
+
+<h3 id="toc_5">3、选择Linux操作系统，选择Debian 6 64位（因为KaliLinux是BackTrack Linux完全遵循Debian开发标准的完整重建，全新的目录框架、复查并打包所有工具、还为VCS建立了Git 树）。</h3>
+
+<p><img src="/KaliLinux/img/kali-xnj-03.png" alt="Alt text"/></p>
+
+<h3 id="toc_6">4、虚拟机名称随意，位置是虚拟机的存放目录。</h3>
+
+<p><img src="/KaliLinux/img/kali-xnj-04.png" alt="Alt text"/></p>
+
+<h3 id="toc_7">5、磁盘大小推荐为30G，同时选择将磁盘拆分为多个文件。</h3>
+
+<p><img src="/KaliLinux/img/kali-xnj-05.png" alt="Alt text"/></p>
+
+<h3 id="toc_8">6、单击自定义硬件。</h3>
+
+<p><img src="/KaliLinux/img/kali-xnj-06.png" alt="Alt text"/></p>
+
+<h3 id="toc_9">7、推荐内存给2G，按照自己电脑的实际配置来选择。</h3>
+
+<p><img src="/KaliLinux/img/kali-xnj-07.png" alt="Alt text"/></p>
+
+<h3 id="toc_10">8、移除打印机（因为用不到）。</h3>
+
+<p><img src="/KaliLinux/img/kali-xnj-08.png" alt="Alt text"/></p>
+
+<h3 id="toc_11">9、单击完成，完成创建虚拟机。</h3>
+
+<p><img src="/KaliLinux/img/kali-xnj-09.png" alt="Alt text"/></p>
+
+<h3 id="toc_12">10、虚拟机创建完成后再开始导入镜像文件，选择虚拟机配置。</h3>
+
+<p><img src="/KaliLinux/img/kali-xnj-10.png" alt="Alt text"/></p>
+
+<h3 id="toc_13">11、选择CD/DVD(IDE) 设置使用ISO映像文件。</h3>
+
+<p><img src="/KaliLinux/img/kali-xnj-11.png" alt="Alt text"/></p>
+
+<h3 id="toc_14">12、选择KaliLinux.iso镜像文件。</h3>
+
+<p><img src="/KaliLinux/img/kali-xnj-12.png" alt="Alt text"/></p>
+
+<h3 id="toc_15">13、点击确定完成挂载镜像。</h3>
+
+<p><img src="/KaliLinux/img/kali-xnj-13.png" alt="Alt text"/></p>
+
+<h3 id="toc_16">14、到此虚拟机的安装就完成了，点击开启此虚拟机就可以开始使用了。</h3>
+
+<p><img src="/KaliLinux/img/kali-xnj-14.png" alt="Alt text"/>           </p>
+
+<h2 id="toc_17">二、命令行安装（英文安装和中文安装流程一样，请自己对照中英翻译）</h2>
+
+<h3 id="toc_18">1、选择命令行安装。</h3>
+
+<p><img src="/KaliLinux/img/kali-install-01.png" alt="Alt text"/></p>
+
+<h3 id="toc_19">2、选择语言。</h3>
+
+<p><img src="/KaliLinux/img/kali-install-02.png" alt="Alt text"/></p>
+
+<h3 id="toc_20">3、选择区域。</h3>
+
+<p><img src="/KaliLinux/img/kali-install-03.png" alt="Alt text"/>   </p>
+
+<h3 id="toc_21">4、选择输入键盘映射。</h3>
+
+<p><img src="/KaliLinux/img/kali-install-04.png" alt="Alt text"/></p>
+
+<p><img src="/KaliLinux/img/kali-install-05.png" alt="Alt text"/><br/>
+<img src="/KaliLinux/img/kali-install-06.png" alt="Alt text"/><br/>
+<img src="/KaliLinux/img/kali-install-07.png" alt="Alt text"/><br/>
+<img src="/KaliLinux/img/kali-install-08.png" alt="Alt text"/><br/>
+<img src="/KaliLinux/img/kali-install-09.png" alt="Alt text"/></p>
+
+<h3 id="toc_22">5、配置主机名。</h3>
+
+<p><img src="/KaliLinux/img/kali-install-10.png" alt="Alt text"/>  </p>
+
+<h3 id="toc_23">6、配置域名（没有可以不写）</h3>
+
+<p><img src="/KaliLinux/img/kali-install-11.png" alt="Alt text"/></p>
+
+<h3 id="toc_24">7、设置Root密码。</h3>
+
+<p><img src="/KaliLinux/img/kali-install-12.png" alt="Alt text"/></p>
+
+<h3 id="toc_25">8、再次输入Root密码。</h3>
+
+<p><img src="/KaliLinux/img/kali-install-13.png" alt="Alt text"/></p>
+
+<p><img src="/KaliLinux/img/kali-install-14.png" alt="Alt text"/><br/>
+<img src="/KaliLinux/img/kali-install-15.png" alt="Alt text"/></p>
+
+<h3 id="toc_26">9、配置磁盘，选择使用整个磁盘。</h3>
+
+<p><img src="/KaliLinux/img/kali-install-16.png" alt="Alt text"/></p>
+
+<h3 id="toc_27">10、选择要安装的磁盘。</h3>
+
+<p><img src="/KaliLinux/img/kali-install-17.png" alt="Alt text"/></p>
+
+<h3 id="toc_28">11、选择分区配置，如果不知道如何选择选第一个。</h3>
+
+<p><img src="/KaliLinux/img/kali-install-18.png" alt="Alt text"/></p>
+
+<h3 id="toc_29">12、系统会自动划分分区，确定将分区改动写入磁盘。</h3>
+
+<p><img src="/KaliLinux/img/kali-install-19.png" alt="Alt text"/></p>
+
+<h3 id="toc_30">13、确定写入磁盘分区同时格式化磁盘。</h3>
+
+<p><img src="/KaliLinux/img/kali-install-20.png" alt="Alt text"/></p>
+
+<p><img src="/KaliLinux/img/kali-install-21.png" alt="Alt text"/></p>
+
+<h3 id="toc_31">14、是否配置YUM源，选是。</h3>
+
+<p><img src="/KaliLinux/img/kali-install-22.png" alt="Alt text"/></p>
+
+<h3 id="toc_32">15、填写HTTP服务器作为YUM源，如果没有可以不填。（如果使用网络YUM源安装必须有网）</h3>
+
+<p><img src="/KaliLinux/img/kali-install-23.png" alt="Alt text"/></p>
+
+<p><img src="/KaliLinux/img/kali-install-24.png" alt="Alt text"/><br/>
+<img src="/KaliLinux/img/kali-install-25.png" alt="Alt text"/><br/>
+<img src="/KaliLinux/img/kali-install-26.png" alt="Alt text"/></p>
+
+<h3 id="toc_33">16、将系统引导写入到第一个分区上。</h3>
+
+<p><img src="/KaliLinux/img/kali-install-27.png" alt="Alt text"/></p>
+
+<h3 id="toc_34">17、选择刚才安装的磁盘。</h3>
+
+<p><img src="/KaliLinux/img/kali-install-28.png" alt="Alt text"/></p>
+
+<p><img src="/KaliLinux/img/kali-install-29.png" alt="Alt text"/></p>
+
+<h3 id="toc_35">18、重启系统。</h3>
+
+<p><img src="/KaliLinux/img/kali-install-30.png" alt="Alt text"/></p>
+
+<h3 id="toc_36">19、重启系统后进入到Kali启动界面。</h3>
+
+<p><img src="/KaliLinux/img/kali-install-31.png" alt="Alt text"/><br/>
+<img src="/KaliLinux/img/kali-install-32.png" alt="Alt text"/><br/>
+<img src="/KaliLinux/img/kali-install-33.png" alt="Alt text"/></p>
+
+<hr/>
+
+<p>### 20、进入系统后中文会出现字符乱码的情况！！！  推荐装英文版。<br/>
+<img src="/KaliLinux/img/kali-install-34.png" alt="Alt text"/><br/>
+<img src="/KaliLinux/img/kali-install-35.png" alt="Alt text"/><br/>
+<img src="/KaliLinux/img/kali-install-down.png" alt="Alt text"/></p>
+
+<hr/>
+
+<h2 id="toc_37">三、图形化安装（英文安装和中文安装流程一样，请自己对照中英翻译）</h2>
+
+<h3 id="toc_38">1、选择带图形化的安装</h3>
+
+<p><img src="/kaliLinux/img/kali-guiinstall-01.png" alt="Alt text"/></p>
+
+<h3 id="toc_39">2、选择语言。</h3>
+
+<p><img src="/kaliLinux/img/kali-guiinstall-02.png" alt="Alt text"/></p>
+
+<h3 id="toc_40">3、选择区域。</h3>
+
+<p><img src="/kaliLinux/img/kali-guiinstall-03.png" alt="Alt text"/></p>
+
+<h3 id="toc_41">4、选择键盘配置。</h3>
+
+<p><img src="/kaliLinux/img/kali-guiinstall-04.png" alt="Alt text"/></p>
+
+<h3 id="toc_42">5、开始寻找安装介质。</h3>
+
+<p><img src="/kaliLinux/img/kali-guiinstall-05.png" alt="Alt text"/><br/>
+<img src="/kaliLinux/img/kali-guiinstall-06.png" alt="Alt text"/><br/>
+<img src="/kaliLinux/img/kali-guiinstall-07.png" alt="Alt text"/><br/>
+<img src="/kaliLinux/img/kali-guiinstall-08.png" alt="Alt text"/><br/>
+<img src="/kaliLinux/img/kali-guiinstall-09.png" alt="Alt text"/></p>
+
+<h3 id="toc_43">6、设置主机名。</h3>
+
+<p><img src="/kaliLinux/img/kali-guiinstall-10.png" alt="Alt text"/></p>
+
+<h3 id="toc_44">7、设置域名（如果没有可以为空）。</h3>
+
+<p><img src="/kaliLinux/img/kali-guiinstall-11.png" alt="Alt text"/></p>
+
+<h3 id="toc_45">8、设置root密码，重复密码。</h3>
+
+<p><img src="/kaliLinux/img/kali-guiinstall-12.png" alt="Alt text"/></p>
+
+<h3 id="toc_46">9、配置时钟。</h3>
+
+<p><img src="/kaliLinux/img/kali-guiinstall-13.png" alt="Alt text"/></p>
+
+<h3 id="toc_47">10、磁盘分区，如果是新安装，建议使用整个分区。</h3>
+
+<p><img src="/kaliLinux/img/kali-guiinstall-14.png" alt="Alt text"/></p>
+
+<h3 id="toc_48">11、选择磁盘。</h3>
+
+<p><img src="/kaliLinux/img/kali-guiinstall-15.png" alt="Alt text"/></p>
+
+<h3 id="toc_49">12、选择分区配置，如果不知道如何选择选第一个。</h3>
+
+<p><img src="/kaliLinux/img/kali-guiinstall-16.png" alt="Alt text"/></p>
+
+<h3 id="toc_50">13、将分区分配方案写入磁盘。</h3>
+
+<p><img src="/kaliLinux/img/kali-guiinstall-17.png" alt="Alt text"/></p>
+
+<h3 id="toc_51">14、确定写入。</h3>
+
+<p><img src="/kaliLinux/img/kali-guiinstall-18.png" alt="Alt text"/></p>
+
+<h3 id="toc_52">15、安装系统。</h3>
+
+<p><img src="/kaliLinux/img/kali-guiinstall-19.png" alt="Alt text"/></p>
+
+<h3 id="toc_53">16、配置YUM源。</h3>
+
+<p><img src="/kaliLinux/img/kali-guiinstall-20.png" alt="Alt text"/></p>
+
+<h3 id="toc_54">17、填写HTTP服务器作为YUM源，如果没有可以不填。（如果使用网络YUM源安装必须有网）</h3>
+
+<p><img src="/kaliLinux/img/kali-guiinstall-21.png" alt="Alt text"/><br/>
+<img src="/kaliLinux/img/kali-guiinstall-22.png" alt="Alt text"/><br/>
+<img src="/kaliLinux/img/kali-guiinstall-23.png" alt="Alt text"/></p>
+
+<h3 id="toc_55">18、将主引导记录写到磁盘上。</h3>
+
+<p><img src="/kaliLinux/img/kali-guiinstall-24.png" alt="Alt text"/></p>
+
+<h3 id="toc_56">19、选择磁盘写入。</h3>
+
+<p><img src="/kaliLinux/img/kali-guiinstall-25.png" alt="Alt text"/><br/>
+<img src="/kaliLinux/img/kali-guiinstall-26.png" alt="Alt text"/><br/>
+ ### 20、进入系统后中文会出现字符乱码的情况！！！  推荐装英文版。<br/>
+<img src="/KaliLinux/img/kali-install-34.png" alt="Alt text"/><br/>
+<img src="/KaliLinux/img/kali-install-35.png" alt="Alt text"/><br/>
+<img src="/KaliLinux/img/kali-install-down.png" alt="Alt text"/></p>
+
+
+		</div>
+	
+
+  
+  
+</div></div>
+
+
+<div class="page-bottom">
+  <div class="row">
+  <hr />
+  <div class="small-9 columns">
+  <p class="copyright">Copyright &copy; 2015
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a>,&nbsp; 
+Theme used <a target="_blank" href="http://github.com">GitHub CSS</a>.</p>
+  </div>
+  <div class="small-3 columns">
+  <p class="copyright text-right"><a href="#header">TOP</a></p>
+  </div>
+   
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+    
+    
+    <script src="asset/js/foundation.min.js"></script>
+    <script src="asset/js/foundation/foundation.offcanvas.js"></script>
+    <script>
+      $(document).foundation();
+
+     
+    </script>
+    
+
+
+  </body>
+</html>
